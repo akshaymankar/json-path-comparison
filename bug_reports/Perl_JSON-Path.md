@@ -16,11 +16,11 @@ The following queries provide results that do not match those of other implement
   ```
   Assertion (":" is not an operator) failed!
    at build/lib/perl5/Carp/Assert.pm line 282, <STDIN> line 4.
-  	Carp::Assert::assert("", "\":\" is not an operator") called at build/lib/perl5/JSON/Path/Evaluator.pm line 217
-  	JSON::Path::Evaluator::_evaluate(JSON::Path::Evaluator=HASH(0x56104385a8b8), ARRAY(0x561043dbc950), ARRAY(0x561043dce680), 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 122
-  	JSON::Path::Evaluator::evaluate(JSON::Path::Evaluator=HASH(0x56104385a8b8), "\$[:]", "want_ref", 0, "want_path", 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 97
-  	JSON::Path::Evaluator::evaluate_jsonpath(ARRAY(0x561043dbc950), "\$[:]", "script_engine", "perl") called at build/lib/perl5/JSON/Path.pm line 107
-  	JSON::Path::values(JSON::Path=SCALAR(0x561043dae1a8), ARRAY(0x561043dbc950)) called at main.pl line 8
+  	Carp::Assert::assert(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 217
+  	JSON::Path::Evaluator::_evaluate(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 122
+  	JSON::Path::Evaluator::evaluate(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 97
+  	JSON::Path::Evaluator::evaluate_jsonpath(...) called at build/lib/perl5/JSON/Path.pm line 107
+  	JSON::Path::values(...) called at main.pl line 12
   ```
 
 - [ ] `$[?(@.key>42)]`
@@ -34,7 +34,7 @@ The following queries provide results that do not match those of other implement
   ```
   Error:
   ```
-  non-safe evaluation, died at main.pl line 8.
+  non-safe evaluation, died at main.pl line 12.
   ```
 
 - [ ] `$[?(@.key<42)]`
@@ -48,7 +48,7 @@ The following queries provide results that do not match those of other implement
   ```
   Error:
   ```
-  non-safe evaluation, died at main.pl line 8.
+  non-safe evaluation, died at main.pl line 12.
   ```
 
 - [ ] `$[?(@.key)]`
@@ -62,7 +62,7 @@ The following queries provide results that do not match those of other implement
   ```
   Error:
   ```
-  non-safe evaluation, died at main.pl line 8.
+  non-safe evaluation, died at main.pl line 12.
   ```
 
 - [ ] `$['key','another']`
@@ -160,7 +160,7 @@ The following queries provide results that do not match those of other implement
   ```
   Actual output:
   ```
-  [{"key": "value"}, 42, [0, 1], "string"]
+  [{"key": "value"}, 42, "string", [0, 1]]
   ```
 
 - [ ] `$.*`

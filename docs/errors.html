@@ -257,11 +257,11 @@ Perl (JSON-Path), Array index slice no start no end
 
 <pre><code>Assertion (":" is not an operator) failed!
  at build/lib/perl5/Carp/Assert.pm line 282, &lt;STDIN&gt; line 4.
-    Carp::Assert::assert("", "\":\" is not an operator") called at build/lib/perl5/JSON/Path/Evaluator.pm line 217
-    JSON::Path::Evaluator::_evaluate(JSON::Path::Evaluator=HASH(0x56104385a8b8), ARRAY(0x561043dbc950), ARRAY(0x561043dce680), 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 122
-    JSON::Path::Evaluator::evaluate(JSON::Path::Evaluator=HASH(0x56104385a8b8), "\$[:]", "want_ref", 0, "want_path", 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 97
-    JSON::Path::Evaluator::evaluate_jsonpath(ARRAY(0x561043dbc950), "\$[:]", "script_engine", "perl") called at build/lib/perl5/JSON/Path.pm line 107
-    JSON::Path::values(JSON::Path=SCALAR(0x561043dae1a8), ARRAY(0x561043dbc950)) called at main.pl line 8
+    Carp::Assert::assert(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 217
+    JSON::Path::Evaluator::_evaluate(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 122
+    JSON::Path::Evaluator::evaluate(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 97
+    JSON::Path::Evaluator::evaluate_jsonpath(...) called at build/lib/perl5/JSON/Path.pm line 107
+    JSON::Path::values(...) called at main.pl line 12
 </code></pre>
 
 <h3 id="Rust_jsonpath___array_index_slice_no_start_no_end">
@@ -673,7 +673,7 @@ PHP (Goessner), Filter greater than
 Perl (JSON-Path), Filter greater than
 </h3>
 
-<pre><code>non-safe evaluation, died at main.pl line 8.
+<pre><code>non-safe evaluation, died at main.pl line 12.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_greater_than">
@@ -753,7 +753,7 @@ PHP (Goessner), Filter greater than or equal
 Perl (JSON-Path), Filter greater than or equal
 </h3>
 
-<pre><code>non-safe evaluation, died at main.pl line 8.
+<pre><code>non-safe evaluation, died at main.pl line 12.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_greater_than_or_equal">
@@ -840,7 +840,7 @@ PHP (Goessner), Filter less than
 Perl (JSON-Path), Filter less than
 </h3>
 
-<pre><code>non-safe evaluation, died at main.pl line 8.
+<pre><code>non-safe evaluation, died at main.pl line 12.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_less_than">
@@ -947,7 +947,7 @@ PHP (Goessner), Filter less than on string
 Perl (JSON-Path), Filter less than on string
 </h3>
 
-<pre><code>non-safe evaluation, died at main.pl line 8.
+<pre><code>non-safe evaluation, died at main.pl line 12.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_less_than_on_string">
@@ -1034,7 +1034,7 @@ PHP (Goessner), Filter less than or equal
 Perl (JSON-Path), Filter less than or equal
 </h3>
 
-<pre><code>non-safe evaluation, died at main.pl line 8.
+<pre><code>non-safe evaluation, died at main.pl line 12.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_less_than_or_equal">
@@ -1075,7 +1075,7 @@ PHP (Goessner), Filter with value
 Perl (JSON-Path), Filter with value
 </h3>
 
-<pre><code>non-safe evaluation, died at main.pl line 8.
+<pre><code>non-safe evaluation, died at main.pl line 12.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_with_value">
@@ -1783,7 +1783,7 @@ PHP (Goessner), Recursive wildcard on scalar
 Perl (JSON-Path), Recursive wildcard on scalar
 </h3>
 
-<pre><code>JSON text must be an object or array (but found number, string, true, false or null, use allow_nonref to allow this) at main.pl line 5.
+<pre><code>JSON text must be an object or array (but found number, string, true, false or null, use allow_nonref to allow this) at main.pl line 9.
 </code></pre>
 
 <h3 id="Python_jsonpath___recursive_wildcard_on_scalar">
@@ -1923,11 +1923,11 @@ Perl (JSON-Path), Script expression
 
 <pre><code>Assertion ("[(" is not an operator) failed!
  at build/lib/perl5/Carp/Assert.pm line 282, &lt;STDIN&gt; line 1.
-    Carp::Assert::assert("", "\"[(\" is not an operator") called at build/lib/perl5/JSON/Path/Evaluator.pm line 217
-    JSON::Path::Evaluator::_evaluate(JSON::Path::Evaluator=HASH(0x563b8b3855c0), ARRAY(0x563b8ae11a68), ARRAY(0x563b8b385758), 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 122
-    JSON::Path::Evaluator::evaluate(JSON::Path::Evaluator=HASH(0x563b8b3855c0), "\$[(\@.length-1)]", "want_ref", 0, "want_path", 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 97
-    JSON::Path::Evaluator::evaluate_jsonpath(ARRAY(0x563b8ae11a68), "\$[(\@.length-1)]", "script_engine", "perl") called at build/lib/perl5/JSON/Path.pm line 107
-    JSON::Path::values(JSON::Path=SCALAR(0x563b8b364f38), ARRAY(0x563b8ae11a68)) called at main.pl line 8
+    Carp::Assert::assert(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 217
+    JSON::Path::Evaluator::_evaluate(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 122
+    JSON::Path::Evaluator::evaluate(...) called at build/lib/perl5/JSON/Path/Evaluator.pm line 97
+    JSON::Path::Evaluator::evaluate_jsonpath(...) called at build/lib/perl5/JSON/Path.pm line 107
+    JSON::Path::values(...) called at main.pl line 12
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___script_expression">
