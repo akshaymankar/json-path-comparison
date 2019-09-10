@@ -251,6 +251,19 @@ Kotlin (com.nfeld.jsonpathlite), Array index slice no start no end
     at query.AppKt.main(App.kt:10)
 </code></pre>
 
+<h3 id="Perl_JSON-Path___array_index_slice_no_start_no_end">
+Perl (JSON-Path), Array index slice no start no end
+</h3>
+
+<pre><code>Assertion (":" is not an operator) failed!
+ at build/lib/perl5/Carp/Assert.pm line 282, &lt;STDIN&gt; line 4.
+    Carp::Assert::assert("", "\":\" is not an operator") called at build/lib/perl5/JSON/Path/Evaluator.pm line 217
+    JSON::Path::Evaluator::_evaluate(JSON::Path::Evaluator=HASH(0x56104385a8b8), ARRAY(0x561043dbc950), ARRAY(0x561043dce680), 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 122
+    JSON::Path::Evaluator::evaluate(JSON::Path::Evaluator=HASH(0x56104385a8b8), "\$[:]", "want_ref", 0, "want_path", 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 97
+    JSON::Path::Evaluator::evaluate_jsonpath(ARRAY(0x561043dbc950), "\$[:]", "script_engine", "perl") called at build/lib/perl5/JSON/Path.pm line 107
+    JSON::Path::values(JSON::Path=SCALAR(0x561043dae1a8), ARRAY(0x561043dbc950)) called at main.pl line 8
+</code></pre>
+
 <h3 id="Rust_jsonpath___array_index_slice_no_start_no_end">
 Rust (jsonpath), Array index slice no start no end
 </h3>
@@ -392,6 +405,13 @@ PHP (galbar-jsonpath), Array index slice start end step 0
 </h3>
 
 <pre><code>Error: 'Step cannot be 0'
+</code></pre>
+
+<h3 id="Perl_JSON-Path___array_index_slice_start_end_step_0">
+Perl (JSON-Path), Array index slice start end step 0
+</h3>
+
+<pre><code>Illegal modulus zero at build/lib/perl5/JSON/Path/Evaluator.pm line 411, &lt;STDIN&gt; line 1.
 </code></pre>
 
 <h3 id="Python_jsonpath___array_index_slice_start_end_step_0">
@@ -649,6 +669,13 @@ PHP (Goessner), Filter greater than
 <pre><code>ArgumentCountError
 </code></pre>
 
+<h3 id="Perl_JSON-Path___filter_greater_than">
+Perl (JSON-Path), Filter greater than
+</h3>
+
+<pre><code>non-safe evaluation, died at main.pl line 8.
+</code></pre>
+
 <h3 id="Python_jsonpath-rw___filter_greater_than">
 Python (jsonpath-rw), Filter greater than
 </h3>
@@ -720,6 +747,13 @@ PHP (Goessner), Filter greater than or equal
 </h3>
 
 <pre><code>ArgumentCountError
+</code></pre>
+
+<h3 id="Perl_JSON-Path___filter_greater_than_or_equal">
+Perl (JSON-Path), Filter greater than or equal
+</h3>
+
+<pre><code>non-safe evaluation, died at main.pl line 8.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_greater_than_or_equal">
@@ -800,6 +834,13 @@ PHP (Goessner), Filter less than
 </h3>
 
 <pre><code>ArgumentCountError
+</code></pre>
+
+<h3 id="Perl_JSON-Path___filter_less_than">
+Perl (JSON-Path), Filter less than
+</h3>
+
+<pre><code>non-safe evaluation, died at main.pl line 8.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_less_than">
@@ -902,6 +943,13 @@ PHP (Goessner), Filter less than on string
 <pre><code>ArgumentCountError
 </code></pre>
 
+<h3 id="Perl_JSON-Path___filter_less_than_on_string">
+Perl (JSON-Path), Filter less than on string
+</h3>
+
+<pre><code>non-safe evaluation, died at main.pl line 8.
+</code></pre>
+
 <h3 id="Python_jsonpath-rw___filter_less_than_on_string">
 Python (jsonpath-rw), Filter less than on string
 </h3>
@@ -982,6 +1030,13 @@ PHP (Goessner), Filter less than or equal
 <pre><code>ArgumentCountError
 </code></pre>
 
+<h3 id="Perl_JSON-Path___filter_less_than_or_equal">
+Perl (JSON-Path), Filter less than or equal
+</h3>
+
+<pre><code>non-safe evaluation, died at main.pl line 8.
+</code></pre>
+
 <h3 id="Python_jsonpath-rw___filter_less_than_or_equal">
 Python (jsonpath-rw), Filter less than or equal
 </h3>
@@ -1014,6 +1069,13 @@ PHP (Goessner), Filter with value
 </h3>
 
 <pre><code>ArgumentCountError
+</code></pre>
+
+<h3 id="Perl_JSON-Path___filter_with_value">
+Perl (JSON-Path), Filter with value
+</h3>
+
+<pre><code>non-safe evaluation, died at main.pl line 8.
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___filter_with_value">
@@ -1717,6 +1779,13 @@ PHP (Goessner), Recursive wildcard on scalar
 <pre><code>jsonpath returned false, this might indicate an error
 </code></pre>
 
+<h3 id="Perl_JSON-Path___recursive_wildcard_on_scalar">
+Perl (JSON-Path), Recursive wildcard on scalar
+</h3>
+
+<pre><code>JSON text must be an object or array (but found number, string, true, false or null, use allow_nonref to allow this) at main.pl line 5.
+</code></pre>
+
 <h3 id="Python_jsonpath___recursive_wildcard_on_scalar">
 Python (jsonpath), Recursive wildcard on scalar
 </h3>
@@ -1846,6 +1915,19 @@ PHP (galbar-jsonpath), Script expression
 </h3>
 
 <pre><code>Invalid JSONPath error: 'Error in JSONPath near '(@.length-1)''
+</code></pre>
+
+<h3 id="Perl_JSON-Path___script_expression">
+Perl (JSON-Path), Script expression
+</h3>
+
+<pre><code>Assertion ("[(" is not an operator) failed!
+ at build/lib/perl5/Carp/Assert.pm line 282, &lt;STDIN&gt; line 1.
+    Carp::Assert::assert("", "\"[(\" is not an operator") called at build/lib/perl5/JSON/Path/Evaluator.pm line 217
+    JSON::Path::Evaluator::_evaluate(JSON::Path::Evaluator=HASH(0x563b8b3855c0), ARRAY(0x563b8ae11a68), ARRAY(0x563b8b385758), 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 122
+    JSON::Path::Evaluator::evaluate(JSON::Path::Evaluator=HASH(0x563b8b3855c0), "\$[(\@.length-1)]", "want_ref", 0, "want_path", 0) called at build/lib/perl5/JSON/Path/Evaluator.pm line 97
+    JSON::Path::Evaluator::evaluate_jsonpath(ARRAY(0x563b8ae11a68), "\$[(\@.length-1)]", "script_engine", "perl") called at build/lib/perl5/JSON/Path.pm line 107
+    JSON::Path::values(JSON::Path=SCALAR(0x563b8b364f38), ARRAY(0x563b8ae11a68)) called at main.pl line 8
 </code></pre>
 
 <h3 id="Python_jsonpath-rw___script_expression">

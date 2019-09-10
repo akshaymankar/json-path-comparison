@@ -16,7 +16,8 @@ queries:
     selector: $[-1]
     document: ["first", "second", "third"]
     result: []
-    status: open
+    status: fail
+    consensus: ["third"]
   - id: array_index_slice_end_out_of_bounds
     selector: $[1:10]
     document: ["first", "second", "third"]
@@ -74,6 +75,7 @@ queries:
     selector: $[0:4:2]
     document: ["first", "second", "third", "forth", "fifth"]
     status: error
+    consensus: ["first", "third"]
   - id: array_index_slice_start_equals_end
     selector: $[0:0]
     document: ["first", "second"]
