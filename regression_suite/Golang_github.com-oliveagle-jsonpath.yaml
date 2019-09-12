@@ -17,7 +17,7 @@ queries:
     selector: $[-1]
     document: ["first", "second", "third"]
     result: "third"
-    status: pass
+    status: open
   - id: array_index_slice_end_out_of_bounds
     selector: $[1:10]
     document: ["first", "second", "third"]
@@ -139,7 +139,6 @@ queries:
     selector: $['key','another']
     document: {"key": "value", "another": "entry"}
     status: error
-    consensus: ["value", "entry"]
   - id: key_bracket_notation_with_double_quotes
     selector: $["key"]
     document: {"key": "value"}
@@ -208,7 +207,6 @@ queries:
     selector: $..*
     document: {"key": "value", "another key": {"complex": "string", "primitives": [0, 1]}}
     status: error
-    consensus: ["value", {"complex": "string", "primitives": [0, 1]}, "string", [0, 1], 0, 1]
   - id: recursive_wildcard_on_null_value_array
     selector: $..*
     document: [40, null, 42]

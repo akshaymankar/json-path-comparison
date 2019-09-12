@@ -116,20 +116,6 @@ The following queries provide results that do not match those of other implement
   	at query.AppKt.main(App.kt:10)
   ```
 
-- [ ] `$['key','another']`
-  Input:
-  ```
-  {"key": "value", "another": "entry"}
-  ```
-  Expected output:
-  ```
-  ["value", "entry"]
-  ```
-  Actual output:
-  ```
-  {"another": "entry", "key": "value"}
-  ```
-
 - [ ] `$.store..price`
   Input:
   ```
@@ -142,20 +128,6 @@ The following queries provide results that do not match those of other implement
   Actual output:
   ```
   [19.95, 8.95, 12.99, 8.99, 22.99]
-  ```
-
-- [ ] `$..*`
-  Input:
-  ```
-  {"key": "value", "another key": {"complex": "string", "primitives": [0, 1]}}
-  ```
-  Expected output:
-  ```
-  ["value", {"complex": "string", "primitives": [0, 1]}, "string", [0, 1], 0, 1]
-  ```
-  Actual output:
-  ```
-  []
   ```
 
 - [ ] `$..*`
